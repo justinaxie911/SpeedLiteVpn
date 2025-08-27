@@ -70,7 +70,7 @@ dependencies {
     implementation files('libs/httpcore-4.4.13.jar')
     implementation files('libs/commons-codec-1.11.jar')
     implementation 'com.loopj.android:android-async-http:1.4.9'
-    implementation files('libs/libv2ray.aar')
+    implementation(name: 'libv2ray', ext: 'aar')
     implementation 'com.github.GrenderG:Toasty:1.5.2'
     implementation 'com.sun.mail:android-mail:1.6.0'
     implementation 'com.sun.mail:android-activation:1.6.0'
