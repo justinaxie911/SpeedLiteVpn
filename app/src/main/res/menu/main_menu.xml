@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	   <item
+        android:id="@+id/sharet"
+        android:icon="@drawable/share"
+        app:showAsAction="always"
+        android:visible="false"
+        android:title="@string/settings">
+    </item>
+    
+	
+    <item
+        android:id="@+id/miSettings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"
+        android:title="@string/settings">
+    </item>
+    
+     
+    
+    
+    <item
+        android:icon="@drawable/ic_config"
+        app:showAsAction="always"
+        android:id="@+id/folder"
+        android:title="@string/config">
+		<menu>
+			<item
+                android:icon="@drawable/ic_file_import"
+                android:id="@+id/miSettingImportar"
+                android:title="@string/settings_import" />
+            <item
+                android:icon="@drawable/ic_file_export"
+                android:id="@+id/miSettingExportar"
+                android:title="@string/settings_export" />
+		</menu>
+    </item>
+
+
+
+    <item
+        android:id="@+id/miLimparConfig"
+        android:title="@string/restore_default" />
+    <item
+        android:id="@+id/cambiarestadolatamsrc"
+        android:title="Cambiar Logica" />
+    <item
+        android:id="@+id/changelatamsrc"
+        android:title="Jenrri vpn" />
+
+
+</menu>

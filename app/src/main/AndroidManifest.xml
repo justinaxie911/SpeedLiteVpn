@@ -1,0 +1,205 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+ >
+
+    <!-- Full network access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- View network connections -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Modify or delete the contents of your SD card -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    />
+    <!-- Para dispositivos con Android 12L (API nivel 32) o inferior -->
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE"
+            android:maxSdkVersion="32" />
+    <!-- Para dispositivos con Android 13 (API nivel 33) o superior -->
+    <uses-sdk android:minSdkVersion="21" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Para manejar reselección dentro de la app en dispositivos con Android 14 o superior si tu app tiene como objetivo Android 14 (API nivel 34) o superior. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Control vibration -->
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.speedlite.vpn.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/xz"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="true"
+        android:usesCleartextTraffic="true"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:name="com.speedlite.vpn.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.speedlite.vpn.MainActivity" />
+        <activity
+            android:name="com.speedlite.vpn.activities.ConfigGeralActivity"
+            android:label="@string/settings"
+            android:parentActivityName="com.speedlite.vpn.MainActivity" />
+
+
+    	<activity
+            android:name="me.dawson.proxyserver.ui.ProxySettings"
+            android:label="Zona WiFi" />
+        
+        <activity
+            android:name="com.speedlite.vpn.speed"
+            android:label="Velocidad de Internet"
+            android:parentActivityName="com.speedlite.vpn.MainActivity"
+            />
+        <activity
+            android:name="com.speedlite.vpn.servers.ServersActivity"
+            android:parentActivityName="com.speedlite.vpn.MainActivity"
+            android:label="Lista De Servidores" />
+
+        <activity
+            android:name="com.speedlite.vpn.activities.ConfigImportFileActivity"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:label="@string/settings_import"
+            android:parentActivityName="com.speedlite.vpn.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="*/*" />
+                <data android:host="*" />
+                <data android:port="*"
+                    tools:ignore="AppLinkUrlError" />
+                <data android:pathPattern=".*.jvi" />
+                <data android:pathPattern=".*..*.jvi" />
+                <data android:pathPattern=".*..*..*.jvi" />
+                <data android:pathPattern=".*..*..*..*.jvi" />
+                <data android:pathPattern=".*..*..*..*..*.jvi" />
+                <data android:pathPattern=".*..*..*..*..*..*.jvi" />
+                <data android:pathPattern=".*..*..*..*..*..*..*.jvi" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.speedlite.vpn.activities.v2ray"
+            android:label="V2ray JSON"
+            android:parentActivityName="com.speedlite.vpn.MainActivity" />
+
+
+                <activity
+            android:name="com.jvinjector.jenrri.zacdevz.ZacDevzRay"
+            android:label="V2ray JSON"
+            android:parentActivityName="com.speedlite.vpn.MainActivity" />
+
+        <activity
+            android:name="com.speedlite.vpn.LaunchVpn"
+            android:label="@string/app_name" />
+
+        <!-- - Receivers -->
+        <receiver
+            android:name="com.speedlite.vpn.core.MainReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.speedlite.vpn.core.MainReceiver.ACTION_SERVICE_STOP">
+                </action>
+                <action android:name="com.speedlite.vpn.core.MainReceiver.ACTION_SERVICE_RESTART">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <!-- - Services -->
+        <service
+            android:name="com.speedlite.vpn.tunnel.vpn.TunnelVpnService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.speedlite.vpn.service.SocksDNSService"
+            android:exported="false">
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admobIDads" />
+        <meta-data
+                android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <activity
+            android:name="com.speedlite.vpn.activities.ConfigExportFileActivity"
+            android:label="@string/settings_export"
+            android:parentActivityName="com.speedlite.vpn.MainActivity" />
+    
+        <activity
+            android:name="com.speedlite.vpn.activities.ExceptionActivity"
+            android:label="@string/app_crash" />
+        <activity
+            android:name="com.speedlite.vpn.TunnelActivity"
+            android:label="@string/tunnel_type"
+            android:parentActivityName="com.speedlite.vpn.MainActivity" />
+        <activity
+            android:name="com.speedlite.vpn.activities.AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName="com.speedlite.vpn.MainActivity" />
+
+
+        <service
+            android:name="com.speedlite.vpn.V2Service"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_VPN_SERVICE"
+            android:process=":RunSoLibV2RayDaemon">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON"
+                android:value="true" />
+        </service>
+
+        <service
+            android:name="com.speedlite.vpn.tunnel.V2Proxy"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:process=":RunSoLibV2RayDaemon" />
+
+
+        <activity
+            android:name="com.speedlite.vpn.activities.LicenseActivity"
+            android:label="@string/license"
+            android:parentActivityName="com.speedlite.vpn.activities.AboutActivity" />
+    </application>
+
+</manifest>

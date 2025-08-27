@@ -1,0 +1,79 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+		
+     
+     <androidx.preference.PreferenceCategory
+        android:title="SSH Ajustes"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="false"
+    >
+
+    
+    
+		<com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="sshServer"
+            android:title="@string/ssh_server"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+        app:iconSpaceReserved="false"
+			android:singleLine="true"
+            
+			/>
+
+		<com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="sshPort"
+            android:title="@string/ssh_port"
+        app:iconSpaceReserved="false"
+			android:summary="@string/no_value"
+			android:singleLine="true"
+			 />
+	
+    
+</androidx.preference.PreferenceCategory>
+        
+    
+    
+     <androidx.preference.PreferenceCategory
+        android:title="Autenticacion"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="false"
+    >
+
+
+		<com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="sshUser"
+            app:iconSpaceReserved="false"
+            android:title="@string/auth_username"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+			android:singleLine="true"
+			 />
+
+		<com.speedlite.vpn.view.PasswordEditTextPreference
+            android:key="sshPass"
+            android:title="@string/proxy_pass"
+            android:summary="@string/no_value"
+        app:iconSpaceReserved="false"
+            android:dialogMessage=""
+			android:singleLine="true"
+             />
+
+    
+    </androidx.preference.PreferenceCategory>
+	
+
+		<com.speedlite.vpn.view.SummaryEditTextPreference
+            android:maxLength="5"
+            android:key="sshPortaLocal"
+            app:iconSpaceReserved="false"
+            android:title="@string/ssh_porta_local"
+            android:summary="1080"
+            android:defaultValue="1080"
+			android:singleLine="true"
+			/>
+		
+	
+	
+	
+</PreferenceScreen>

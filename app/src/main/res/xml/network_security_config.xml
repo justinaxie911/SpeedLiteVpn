@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<network-security-config>
+	<base-config cleartextTrafficPermitted="true">
+		<trust-anchors>
+			<certificates src="system" />
+		</trust-anchors>
+	</base-config>
+</network-security-config>

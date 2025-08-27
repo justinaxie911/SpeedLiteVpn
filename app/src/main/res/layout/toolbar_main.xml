@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<com.google.android.material.appbar.AppBarLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     app:elevation="0dp">
+
+    <androidx.appcompat.widget.Toolbar
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:id="@+id/toolbar_main" />
+
+</com.google.android.material.appbar.AppBarLayout>

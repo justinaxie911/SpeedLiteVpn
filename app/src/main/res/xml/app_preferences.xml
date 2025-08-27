@@ -1,0 +1,214 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="screenMain">
+
+
+    <androidx.preference.PreferenceCategory
+        android:title="Túnel"
+        app:isPreferenceVisible="false"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="false">
+
+
+        <androidx.preference.Preference
+            android:key="SSHTunnelSettings"
+            android:summary="Configurar SSH"
+            android:title="@string/settings_ssh_title"
+            app:icon="@drawable/ic_cloud_line"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:action="openSSHScreen"
+                android:targetClass="com.speedlite.vpn.activities.ConfigGeralActivity"
+                android:targetPackage="com.speedlite.vpn" />
+
+        </androidx.preference.Preference>
+
+
+        <androidx.preference.Preference
+            android:key="DNSTunnelSettings"
+            android:summary="Configurar SlowDNS"
+            android:title="DNSTT (DNS)"
+            app:icon="@drawable/ic_stat_dnsurgent_color"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:action="openDNSScreen"
+                android:targetClass="com.speedlite.vpn.activities.ConfigGeralActivity"
+                android:targetPackage="com.speedlite.vpn" />
+
+        </androidx.preference.Preference>
+
+
+        <androidx.preference.Preference
+            android:key="V2RAYTunnelSettings"
+            android:summary="Configurar V2ray"
+            android:title="V2RAY (JSON)"
+            app:icon="@drawable/ic_stat_v2ray"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:targetClass="com.speedlite.vpn.activities.v2ray"
+                android:targetPackage="com.speedlite.vpn" />
+
+        </androidx.preference.Preference>
+
+        <androidx.preference.Preference
+            android:key="UDPTunnelSettings"
+            android:summary="Configurar Udp"
+            android:title="Hysteria (UDP)"
+            app:icon="@drawable/ic_stat_hysteria"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:action="openUDPScreen"
+                android:targetClass="com.speedlite.vpn.activities.ConfigGeralActivity"
+                android:targetPackage="com.speedlite.vpn" />
+
+        </androidx.preference.Preference>
+
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Otras configuraciones"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="false">
+
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="data_compression"
+            android:summary="Comprime y acelera la transferencia de datos para archivos/datos que se pueden comprimir. NO recomendado para dispositivos con poca memoria."
+            android:title="Compresión de Datos"
+            app:iconSpaceReserved="false" />
+
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="wakelock"
+            android:singleLine="true"
+            android:summary="Activar solo si la aplicación deja de funcionar por sí sola, como sucede al bloquear la pantalla en algunos dispositivos."
+            android:title="Activación de CPU"
+            app:iconSpaceReserved="false" />
+
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="vibrate"
+            android:summary="Vibrar cuando cambia el estado de la conexión"
+            android:title="Vibrar"
+            app:iconSpaceReserved="false" />
+
+
+        <SwitchPreferenceCompat
+            android:shouldDisableView="false"            android:key="elmandarin"
+            android:summary="Cambiar Estado"
+            android:title="Cambiar Estado"
+            app:isPreferenceVisible="false"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:shouldDisableView="false"            android:defaultValue="false"
+            app:iconSpaceReserved="false"
+            android:key="userorhwid"
+            android:summary="Al activar esta opción podras autentificarte con una cuenta SSH"
+            android:title="Utiliza un Usuario y Contraseña" />
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:dependency="userorhwid"
+            android:key="userlogin"
+            app:iconSpaceReserved="false"
+            android:title="Usuario"
+            android:summary="Ingresa un usuario"
+            android:singleLine="true"
+            />
+
+        <com.speedlite.vpn.view.PasswordEditTextPreference
+            android:dependency="userorhwid"
+            android:key="passwlogin"
+            app:iconSpaceReserved="false"
+            android:title="Contraseña"
+            android:summary="Ingresa una contraseña"
+            android:singleLine="true"
+            />
+        <SwitchPreferenceCompat
+            android:key="dnsForward"
+            android:summary="@string/summary_forward_dns"
+            android:title="@string/title_forward_dns"
+            app:iconSpaceReserved="false" />
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:defaultValue="8.8.8.8"
+            android:key="dnsResolver1"
+            android:singleLine="true"
+            android:summary="@string/summary_dns_primary"
+            android:title="@string/title_dns_primary"
+            app:iconSpaceReserved="false" />
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:defaultValue="8.8.4.4"
+            android:key="dnsResolver2"
+            android:singleLine="true"
+            android:summary="@string/summary_dns_secondary"
+            android:title="@string/title_dns_secondary"
+            app:iconSpaceReserved="false" />
+
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="udpForward"
+            android:summary="@string/summary_forward_udp"
+            android:title="@string/title_forward_udp"
+            app:iconSpaceReserved="false" />
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:defaultValue="127.0.0.1:7300"
+            android:dialogMessage=""
+            android:key="udpResolver"
+            android:singleLine="true"
+            android:summary="@string/summary_resolver_udp"
+            android:title="@string/title_resolver_udp"
+            app:iconSpaceReserved="false" />
+
+
+        <SwitchPreferenceCompat
+            android:key="auto_ping"
+            android:summary="establecer un servidor para el ping"
+            android:title="Auto ping"
+            app:iconSpaceReserved="false" />
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:defaultValue="clients3.google.com"
+            android:dependency="auto_ping"
+            android:key="ping_server"
+            android:summary="Establecer servidor de ping"
+            android:title="Ping Server"
+            app:iconSpaceReserved="false" />
+
+
+        <SwitchPreferenceCompat
+            android:key="tetherSubnet"
+            android:summary="@string/summary_tethering_subnet"
+            android:title="@string/title_tethering_subnet"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            android:key="disableDelaySSH"
+            android:summary="@string/summary_disable_delay_ssh"
+            android:title="@string/title_disable_delay_ssh"
+            app:iconSpaceReserved="false" />
+
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:defaultValue="3"
+            android:key="pingerSSH"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:summary="@string/title_ping_time"
+            android:title="@string/title_ping_time"
+            app:iconSpaceReserved="false" />
+
+
+    </androidx.preference.PreferenceCategory>
+
+
+</PreferenceScreen>

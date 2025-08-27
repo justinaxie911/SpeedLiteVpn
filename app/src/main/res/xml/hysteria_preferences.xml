@@ -1,0 +1,89 @@
+   <PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    
+     <androidx.preference.PreferenceCategory
+        android:title="Autenticacion"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="false"
+    >
+
+    
+    
+    <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="udpserver"
+            android:title="Servidor udp/ip"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+        app:iconSpaceReserved="false"
+            android:singleLine="true"
+            
+            />
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="udpauth"
+            android:title="Hysteria Autenticacion"
+        app:iconSpaceReserved="false"
+        
+            android:summary="@string/no_value"
+            android:singleLine="true"
+             />
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="udpobfs"
+            app:iconSpaceReserved="false"
+            android:title="Hysteria Obfuscation"
+            android:summary="@string/no_value"
+            android:dialogMessage=""
+            android:singleLine="true"
+             />
+    
+    
+    </androidx.preference.PreferenceCategory>
+    
+    
+     <androidx.preference.PreferenceCategory
+        android:title="Velocidad"
+        app:iconSpaceReserved="false"
+        app:singleLineTitle="false"
+    >
+
+    
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="udpdown"
+            android:title="Hysteria Down"
+        android:summary="1"
+            android:defaultValue="1"
+        app:iconSpaceReserved="false"
+            android:singleLine="true"
+             />
+
+    
+
+        <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="udpup"
+            app:iconSpaceReserved="false"
+            android:title="Hysteria Up"
+            android:summary="1"
+            android:defaultValue="1"
+            android:singleLine="true"
+            />
+        
+    
+    
+            <com.speedlite.vpn.view.SummaryEditTextPreference
+            android:key="udpbuffer"
+            app:iconSpaceReserved="false"
+            android:title="Hysteria Window"
+            android:summary="8888"
+            android:defaultValue="8888"
+            android:singleLine="true"
+            />
+        
+    
+    </androidx.preference.PreferenceCategory>
+    
+    
+    
+</PreferenceScreen>

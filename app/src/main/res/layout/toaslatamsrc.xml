@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_marginLeft="40dp"
+	android:layout_marginRight="40dp"
+	android:padding="10dp"
+	android:id="@+id/toastlayout">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="welcome"
+		android:typeface="serif"
+		android:id="@+id/textqt"
+		android:textColor="#FFFFFF"
+		android:textSize="12sp"
+		android:gravity="center"/>
+
+</RelativeLayout>
+

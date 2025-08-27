@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="ExpandCollapseCard">
+        <attr
+            name="title"
+            format="string" />
+        <attr
+            name="title_size"
+            format="dimension" />
+        <attr
+            name="title_color"
+            format="color" />
+        <attr
+            name="title_background_color"
+            format="color" />
+        <attr
+            name="item_inner_view"
+            format="reference" />
+        <attr
+            name="expand_icon"
+            format="reference" />
+        <attr
+            name="collapse_icon"
+            format="reference" />
+    </declare-styleable>
+    <style name="mySwitch">
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+    <style
+        name="Theme.Material3.Preference"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="preferenceTheme">@style/MaterialPreferenceThemeOverlay</item>
+    </style>
+
+    <style
+        name="MaterialPreferenceThemeOverlay"
+        parent="PreferenceThemeOverlay">
+        <item name="switchPreferenceCompatStyle">@style/Preference.SwitchPreferenceCompat</item>
+    </style>
+
+    <style
+        name="Preference.SwitchPreferenceCompat"
+        parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/preference_widget_material_switch</item>
+    </style>
+
+
+    <style
+            name="AppTheme"
+            parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_dark_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_dark_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_dark_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_dark_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_dark_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_dark_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_dark_error</item>
+        <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_dark_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorOnBackground">@color/md_theme_dark_onBackground</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_dark_outline</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
+        <item
+            name="android:navigationBarColor"
+            tools:targetApi="21">@color/md_theme_dark_background</item>
+        <item name="colorPrimaryDark">@color/md_theme_dark_background</item>
+
+        <item name="alertDialogTheme">@style/AppAlertDialog</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="preferenceTheme">@style/AppPreference</item>
+
+    </style>
+    
+    	
+    
+       <style name="AppAlertDialog"
+        parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/md_theme_dark_primary</item>
+        <item name="android:textColor">@color/white</item>
+          <item name="colorPrimary">@color/md_theme_dark_primary</item>
+           <item name="colorOnPrimary">@color/md_theme_dark_primary</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+           <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/targeta</item>
+        <item name="buttonTint">@color/white</item>
+    </style>
+    
+
+    
+    <style
+            name="AppPreference"
+        parent="PreferenceThemeOverlay">
+        <item name="android:cacheColorHint">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+      
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+		android:drawable="@drawable/ic_connecting_01"
+		android:duration="500" />
+    <item 
+		android:drawable="@drawable/ic_connecting_02" 
+		android:duration="500" />
+</animation-list>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="fill_parent"
+     android:layout_width="fill_parent"
+     android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:id="@+id/appBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:id="@+id/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    
+    
+    	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/v2raylayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:cardCornerRadius="2dp"
+			app:cardElevation="2dp"
+			android:layout_marginTop="10dp"
+			android:visibility="gone"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:hint="INPUT YOUR V2RAY ACCOUNT"
+			android:textColorHint="#ffffff">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/accountInput"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="10dp"
+				android:visibility="gone"
+				android:textColor="#ffffff"
+				android:textColorHint="#ffffff"
+				android:textSize="15dp"/>
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/jsonlayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:cardCornerRadius="2dp"
+			app:cardElevation="2dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+		android:textSize="13.0sp"
+			android:textColorHint="#ffffff">
+
+		 <com.amrdeveloper.codeview.CodeView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:autoLink="web"
+        android:visibility="gone"
+         android:gravity="top|start"
+                 android:textSize="13.0sp"
+        android:background="@color/md_theme_dark_background"
+         android:dropDownSelector="@color/contentBackground"
+         android:dropDownWidth="80.0sp"
+         android:dropDownHorizontalOffset="0dp"
+         android:id="@+id/jsontInput" />
+
+		</com.google.android.material.textfield.TextInputLayout>
+
+	</LinearLayout>
+
+   
+
+    <com.airbnb.lottie.LottieAnimationView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:visibility="gone"
+         app:lottie_rawRes="@raw/block"
+         android:id="@+id/block" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:visibility="gone"
+         android:gravity="center"
+         android:textSize="16.0sp"
+         android:layout_weight="1.0"
+         android:layout_gravity="center"
+         android:id="@+id/bloqueda"
+         android:text="CONFIGURACION BLOQUEADA" />
+
+</LinearLayout>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<resources>
+    <string name="app_name">Speedlite</string>
+    <string name="custom_payload_msg">Please enable custom payload to generate</string>
+    <string name="locked_msg">Configuracion bloqueada</string>
+
+	<string name="admobIDads">ca-app-pub-7259833628250260~8264764489</string>
+	<string name="admobBannerads">ca-app-pub-7259833628250260/4672686605</string>
+	<string name="admobinterst">ca-app-pub-7259833628250260/1984612382</string>
+	<string name="admobreward">ca-app-pub-7259833628250260/4199318976</string>
+	<string name="admobOpen">ca-app-pub-7259833628250260/3738270074</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <string name="state_disconnecting">Desconectando</string>
+    <string name="dash_sign">-</string>
+    <string name="default_payload">CONNECT [host_port] [protocol][crlf][crlf]</string>
+    <string name="remote_proxy">Remote Proxy</string>
+    <string name="censored_string">********</string>
+    <string name="sni_title">Server Name Indication (SNI)</string>
+    <string name="current_dns">DNS (%1$s)</string>
+
+    <string name="ssh_title">Secure Shell (SSH)</string>
+    <string name="v2ray_xray">V2Ray</string>
+    <string name="hysteria">Hysteria</string>
+    <string name="dns_dnstt">DNS (DNSTT)</string>
+
+    <string name="info1"> V2 Injector es una herramienta VPN profesional para navegar por Internet de forma privada y segura con múltiples tecnologías de protocolo y túneles incorporadas en una sola aplicación</string>
+
+    <string name="info2">
+	Funciona como un SSH universal, Proxy, SSL, Túnel DNS, Hysteria, Cliente V2Ray para cifrar tu conexión para que puedas navegar por Internet de forma privada y segura.
+
+</string>
+
+    <string name="operator_checkbox_tittle">Bloquear Operador</string>
+	<string name="block_hwid_tittle">HWID Invalido, El Servidor Esta Bloqueado Por HWID\nContacta a tu distribuidor para otro servidor</string>
+ <string name="block_only_data_movile">Configuracion bloqueada para Wifi, por favor activa los Datos Mobiles</string>
+	<string name="only_play_store_instalation">Este Servidor Solo Permite la Instalacion de Play Store</string>
+	<string name="only_play_store">Solo PlayStore</string>
+	<string name="operator_block_tittle">Bloqueo De Operador Activo, Tu Operador es Diferente Al Establecido en el Servidor</string>
+    <string name="info3">
+	También te ayuda a acceder a sitios web bloqueados detrás de un cortafuegos. ¿Mejor parte? Podrás configurar tu propio servidor y conectarte usando esta aplicación.</string>
+<string name="block_hwid_checkbox_tittle">Bloqueo de HWID</string>
+
+    <string name="tutorial_desc">"Ejemplos, Manuales y Consejos:
+
+		Developer:
+		https://t.me/JV_injector
+
+		Canal De Telegram:
+		https://t.me/JV_injector
+
+</string>
+    <string name="more_from_us">Developer URL</string>
+    // Developer url
+
+    <string name="ratetext">We resolved problem(s) successfully.</string>
+    <string name="rate_text1">Is that worth a good rating?</string>
+
+    <string name="speed">Speed</string>
+    <string name="history">History</string>
+    <string name="block_hwid_tittleR">bloquear hwid</string>
+    
+    
+    
+
+   <string name="delete_url_title">Borrar url</string>
+    <string name="date_format">MM/dd/yyyy HH:mm</string>
+    <string name="speedtest">Speed Test</string>
+    <string name="value">-</string>
+    <string name="upload">UPLOAD</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="date">Unit</string>
+    <string name="mbps">values</string>
+    <string name="values">Mbps</string>
+    <string name="scale">Scale</string>
+    <string name="_100">100</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="share">Share</string>
+    <string name="units">MBS</string>
+    <string name="connection_name">Connection Name</string>
+    <string name="warning">Exit App</string>
+    <string name="description_dialogue">Are You Sure You Want to Exit</string>
+    
+    <string name="are_you_sure_you_want_to_exit">Are you Sure You Want to Exit</string>
+
+
+    
+	<string name="about">Acerca de</string>
+	<string name="about1">Licencia</string>
+	<string name="actived">Modo oscuro</string>
+	<string name="disabled">Desactivado</string>
+	<string name="config">Configuraciones</string>
+	<string name="settings">Configuraciones</string>
+	<string name="settings_ssh">Configuracion SSH</string>
+    	<string name="settings_udp">Hysteria Settings</string>
+    	<string name="settings_v2">Ajustes de V2ray</string>
+	<string name="settings_ssh_title">Secured Shell (SSH)</string>
+	<string name="settings_ssh_summary">SSH Ajustes</string>
+	<string name="network_mobile">Radio de red</string>
+	<string name="method_connection">Connection Method</string>
+	<string name="rate_app">Rate</string>
+	<string name="feedback">Feedback</string>
+	<string name="category_forward_udp">Udp forwarding</string>
+	<string name="title_forward_udp">Forward UDP</string>
+	<string name="summary_forward_udp">Si está activo, redirige las solicitudes al servidor remoto. De lo contrario, las solicitudes UDP no se resolverán.</string>
+	<string name="title_resolver_udp">UDP Gateway (Remote)</string>
+    <string name="title_dns_secondary">DNS Secondary</string>
+	<string name="summary_resolver_udp">Standard (7300)</string>
+	<string name="category_forward_dns">DNS Forwarding</string>
+	<string name="title_forward_dns">Forward DNS </string>
+	<string name="summary_forward_dns">If active, it redirects requests to the remote server. If not, DNS requests will be resolved by the local system.</string>
+	<string name="title_dns_primary">Primary DNS</string>
+	<string name="category_advanced_settings">Advanced Settings</string>
+	<string name="title_hide_log">Hide Log on Start</string>
+	<string name="summary_hide_log">If active, the log will not be shown automatically.</string>
+	<string name="title_auto_clear_log">Borrar registros automáticamente</string>
+	<string name="summary_auto_clear_log">Si está activo, los registros se borran automáticamente.</string>
+	<string name="category_forward_port">Port Forwarding</string>
+	
+	<string name="title_mode_debug">Debug mode</string>
+	<string name="summary_mode_debug">Allows you to see more advanced information in the logs.</string>
+	<string name="category_filter_apps">Filter Apps</string>
+	<string name="category_settings_adicionais">Additional configurations</string>
+	<string name="title_ping_time">Ping (seconds)</string>
+	<string name="category_user_interface">User Interface</string>
+	<string name="title_language">Language</string>
+	<string name="category_tunnel">Tunnel</string>
+	
+	<string name="title_number_max_threads">Número máximo de subprocesos</string>
+	<string name="summary_number_max_threads">Cuanto mayor sea el número de Threads, mayor será el consumo de energía y la velocidad de conexión de tu dispositivo.</string>
+	<string name="title_mode_vpn">Send Traffic over VPN</string>
+	<string name="summary_mode_vpn">If active, all traffic will be sent over the VPN.</string>
+	<string name="title_filter_apps">Filter Apps</string>
+	<string name="title_bypass_mode">Bypass Mode</string>
+    <string name="summary_dns_primary">DNS (8.8.8.8)</string>
+    <string name="summary_dns_secondary">DNS (8.8.4.4)</string>
+	<string name="summary_bypass_modo">If active, traffic from the selected applications will be sent directly.</string>
+	<string name="title_apps_list">Apps List</string>
+	<string name="summary_apps_list">Enter a package name by line. See Settings -> Apps for the package name of the apps.</string>
+	<string name="title_tethering_subnet">Subred de anclaje (beta)</string>
+	<string name="summary_tethering_subnet">Habilítelo si tiene problemas para compartir Internet desde su dispositivo.</string>
+	
+	<string name="ssh_server">SSH Host</string>
+	<string name="ssh_port">SSH Port</string>
+	<string name="ssh_porta_local">Local Port (Socks5)</string>
+	<string name="payload">Payload:</string>
+	<string name="proxy_remote">Remote Proxy</string>
+	<string name="squid">HTTP Proxy (eg: Squid)</string>
+	<string name="proxy_ip">Proxy IP/Host</string>
+	<string name="proxy_port">Port</string>
+	<string name="proxy_auth">Proxy Authentication</string>
+	<string name="proxy_user">Username</string>
+	<string name="proxy_pass">Password</string>
+	<string name="dir_name">Folder</string>
+	<string name="alert_exit">¿Quieres salir o minimizar?</string>
+	<string name="alert_clear_settings">¿Estás seguro de que quieres restaurar la configuración predeterminada?</string>
+	
+	<string name="no_value">none</string>
+	<string name="blocked">Bloqueado</string>
+	<string name="expired">Caducado</string>
+	<string name="title_delete_file">Delete File</string>
+	<string name="alert_delete_file">Do you want to delete this file?</string>
+	<string name="dir_home_name">Almacenamiento interno</string>
+	<string name="select_file_setting">Seleccione el archivo</string>
+	<string name="title_permission_request">Permission granted</string>
+	<string name="message_permission_request">Please, it is necessary to grant the necessary permission for the application to work correctly.</string>
+	<!--- export settings -->
+	
+	<string name="export_button">Exportar</string>
+	<string name="title_security">Candado de seguridad</string>
+	<string name="check_protect">Bloquear la configuración y evitar editar</string> 
+	<string name="title_extra">Otros ajustes</string> 
+	<string name="check_block_root">Bloquear root</string> 
+	<string name="check_show_login_start">Show login to start</string> 
+	<string name="check_date_valid">Establecer fecha de vencimiento</string> 
+	<string name="input_note_msg">Mensaje / nota para los usuarios (opcional)</string>
+	<string name="alert_block_settings">Configurar el bloqueo no garantiza el 100% de seguridad</string>
+	<string name="error_empty_name_file">El nombre del archivo no debe estar vacío.</string>
+		
+	<!--- action messages -->
+	<string name="minimize">Minimize</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="save">Save</string>
+	<string name="open">Open</string>
+	<string name="more">More</string>
+	<string name="wait">Wait</string>
+	<string name="attention">Attention</string>
+     <string name="first_start_msg">Esta aplicación fue desarrollada para usuarios avanzados, tenga esto en cuenta al usarla.</string>
+	<string name="opening_apn">Opening APN Settings</string>
+	<string name="apn_settings">APN Settings</string>
+	<string name="license">License</string>
+	<string name="developer">Developer</string>
+	<string name="code_based">Code Reference</string>
+	
+	<string name="close">Close</string>
+	<string name="open_with">Open with</string>
+	<string name="clear_settings">Clear Settings/Data</string>
+	<string name="clear_logs">Logs Cleared</string>
+	<string name="settings_ImportExport">Configuration</string>
+	<string name="settings_import">Importar configuracion</string>
+	<string name="settings_export">Exportar configuracion</string>
+	<string name="wizard_details">Some details of AGN Injector Tunnel</string>
+	<string name="wizard_details_msg">The AGN Injector Tunnel is a VPN client that works through an SSH server. The app itself is useless without a configuration, so it should only be used by advanced users.</string>
+	
+	<string name="payload_details">Keywords</string>
+	<string name="payload_details_msg">Currently, the following keywords are supported in the connection text: %s</string>
+    <string name="error_tunnel_service_execution">Detenga el servicio VPN y vuelva a intentarlo.</string>
+	<string name="error_no_supported">Function not supported on your device</string>
+	<string name="error_invalid_settings">Configuración no válida</string>
+	<string name="error_delete_file">Failed to delete file</string>
+	<string name="error_file_config_incompatible">File not compatible</string>
+	
+	<string name="error_file_not_found">File not found</string>
+	<string name="error_permission_writer_required">Write permission is required</string>
+	<string name="error_date_selected_invalid">The selected day cannot be less than today</string>
+	<string name="error_export_settings">No se pudo exportar la configuración</string>
+	<string name="success_import_settings">Archivo de configuración importado correctamente</string>
+	<string name="success_export_settings">Configuración exportada correctamente</string>
+	<string name="file_saved_to">\n\nArchivo guardado en:</string>
+	<string name="app_description">V2 Injector Tunnel is an SSH TUNNEL client, designed to bypass local blocking and network relationship.</string>
+	
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="exit">Salir de la app</string>
+	<string name="restore_default">Restablecer datos</string>
+    <string name="error_request_permission">You need access to External Storage</string>
+    <string name="importing_settings">Importing Configuration</string>
+    <string name="log_settings_valid">File valid until: %1$s</string>
+    <string name="log_server_banner">Mensaje del servidor:</string>
+    <string name="log_conection_lost">Connection Lost</string>
+    <string name="start">Iniciar</string>
+    <string name="stop">Detener</string>
+	<string name="reconnect">Reconnect</string> 
+	<string name="stopping_service_ssh">Deteniendo SSH service</string>
+	<string name="starting_service_ssh">Iniciando SSH Service</string>
+    <string name="title_auth">Authentication</string>
+    <string name="auth_message">Complete with SSH account details</string>
+	
+    <string name="auth_username">Username</string>
+    <string name="password">Password</string> 
+	<string name="show_password">Show password</string>
+	<string name="save_password">Save password</string>
+    <string name="channel_name_background">Connection statistics</string>
+    <string name="channel_description_background">Ongoing statistics of the established AGN Injector Tunnel connection</string>
+    <string name="channel_name_status">Connection status change</string>
+    <string name="channel_description_status">Status changes of the AGN Injector Tunnel connection (Connecting, authenticating,…)</string>
+    <string name="channel_name_userreq">User interaction required</string>
+    <string name="channel_description_userreq">V2 Injector Tunnel colnnection requires a user input, e.g. two factor authentification</string>
+	
+ <string name="state_starting">Comenzando</string>
+    <string name="state_connecting">Conectando...</string>
+    <string name="state_wait">Esperando respuesta del servidor</string>
+    <string name="state_auth">Autenticando</string>
+    <string name="state_auth_success"></string>
+    <string name="state_get_config">Obteniendo configuración del cliente</string>
+    <string name="state_assign_ip">Asignando direcciones IP</string>
+    <string name="state_add_routes">Añadiendo rutas</string>
+
+    <string name="state_connected">Conectado</string>
+    <string name="state_disconnected">Desconectado</string>
+    <string name="state_reconnecting">Reconectando...</string>
+    <string name="state_stopping">Parando...</string>
+    <string name="state_noprocess">Not running</string>
+    <string name="state_resolve">Resolving host names</string>
+    <string name="state_tcp_connect">Connecting (TCP)</string>
+	<string name="state_auth_failed">Authentication failed</string>
+	<string name="state_nonetwork">Sin señal</string>
+	
+    <string name="state_waitconnectretry">Waiting %ss seconds between connection attempt</string>
+    <string name="state_auth_pending">Waiting for Autentication</string>
+    <string name="state_user_vpn_password" translatable="false">Waiting for user VPN password</string>
+    <string name="state_user_vpn_permission" translatable="false">Waiting for user permission to use VPN API</string>
+    <string name="state_user_vpn_password_cancelled" translatable="false">VPN password input dialog cancelled</string>
+    <string name="state_user_vpn_permission_cancelled" translatable="false">VPN API permission dialog cancelled</string>
+    <string name="unknown_state">Unknown Status</string>
+    <string name="nought_alwayson_warning"><![CDATA[If you did not get a VPN confirmation dialog, you have \"Always on VPN\" enabled for another app. In that case only that app is allowed to connect to a VPN. Check under Settings-> Networks more .. -> VPNS]]></string>
+    <string name="no_vpn_support_image">Your image does not support the VPNService API, sorry :(</string>
+    <string name="state_proxy_running">Running - Proxy Thread</string>
+	
+    <string name="ssh_connecting">inyectando</string>
+    <string name="name_file">File name</string>
+	<string name="sslpay">TLS/SSL + Payload</string>
+	<string name="webssl">HTTP Proxy + SSL</string>
+
+	<string name="state_proxy_inject">inyectando</string> <string name="mobile_info">Running on %3$s %1$s (%2$s), Android %5$s API %4$d</string> 
+	<string name="app_mobile_info">Version de aplicacion: %1$s %2$s</string>
+	<string name="alert_update_app">Instalar la última versión</string>
+    <string name="new_version_available">New Version Available</string>
+    <string name="update_application">Instalar la última versión</string>
+    <string name="alert_update_app_tittle">Instalar la última versión</string>
+    <string name="error_settings_expired">Archivo caducado</string>
+    <string name="error_file_settings_invalid">Configuración no válida</string>
+    <string name="error_file_invalid">Archivo inválido</string>
+	
+    <string name="error_internet_off">Por favor conectarse a Internet</string>
+    <string name="error_empty_payload">El payload no puede estar vacío.</string>
+    <string name="error_empty_settings">Configurar correctamente para comenzar</string>
+    <string name="error_proxy_invalid">Proxy invalido</string>
+    <string name="error_server_ip_invalid">Invalid Server / IP</string>
+    <string name="error_root_detected">Configuración bloqueada para dispositivos con acceso root</string>
+    <string name="error_vpn_sniffer_detected">Another running VPN application has been detected, stop it before</string>
+    <string name="error_save_settings">No se pudo guardar la configuración</string>
+	
+	<string name="acc_info">Informacion de cuenta</string>
+	<string name="public_key">Public Key</string>
+	<string name="summary_private_key">"Your slowdns server's public key"</string>
+	<string name="title_name_server">Server Name</string>
+	<string name="summary_name_server">The hostname of the SlowDNS server</string>
+	<string name="slowdns_configuration">SlowDNS Settings</string>
+	<string name="summary_dns">The DNS IP of your SlowDNS server</string>
+	<string name="title_disable_delay_ssh">Deshabilitar el retraso de TCP</string>
+<string name="summary_disable_delay_ssh">Si está activo no habrá retrasos entre solicitudes, lo que puede mejorar el ping o incluso la velocidad de la conexión.</string>
+	<string name="user_authentication">User authentication</string>
+	<string name="telegram">Comunidad de Telegram</string>
+	<string name="pay_gen">Generador de payload</string>
+	<string name="sni_host">SNI / Host</string>
+	<string name="bugs_fixed">Small bugs fixed</string>
+	<string name="alert_app_on_latest">Your app is at the latest version</string>
+	<string name="alert_update_error">An error occurred while verifying the update. Please contact the developer.\n</string>
+	<string name="alert_update_app_now">Update your app now!</string>
+	
+	<string name="tunnel_start">Tunnel Thread Started</string>
+	<string name="tunnel_stop">Tunnel Thread Stopped</string>
+	<string name="sending_fd">Sending Fd to sock</string>
+	<string name="incorrect_pass_user"><strong>Cannot Authenticate - Incorrect username or password | Contact the setup author for a new username / password</strong></string>
+	<string name="fingerprint">Fingerprint : </string>
+	<string name="pass_auth">Password authentication available</string>
+	<string name="auth_public_key">Authenticating with public key</string>
+	<string name="unable_auth">It was not possible to authenticate with the data provided</string>
+	<string name="ssl_handshake">SSL Handshake</string>
+	<string name="host_sni">Host SNI: %s</string>
+	<string name="local_socks">Starting local socks</string>
+	<string name="socks_local">Socks Local: </string>
+	<string name="service_tunnel_start">Tunneling service started</string>
+	<string name="service_tunnel_failed">Failed to start tunnel vpn service</string>
+	
+	<string name="vpn_service_failed">Failed to start VPN Service</string>
+	<string name="service_tunnel_stopping">Stopping Tunnel Service</string>
+	<string name="wait_for_check">Please wait for the check</string>
+	<string name="ads_finished">Thank you for supporting our app</string>
+	<string name="custom_payload1">(Custom Payload)</string>
+	<string name="payload_locked_msg">Acceso denegado !</string>
+	<string name="direct">SSH Direct</string>
+	<string name="http">HTTP Proxy + SSL</string>
+	<string name="sslrp">TLS/SSL + Proxy</string>
+	<string name="ssl">TLS/SSL (stunnel)</string>
+	<string name="slowdns">DNS (DNSTT)</string>
+	
+	<string name="sslpayload">TLS/SSL + Payload</string>
+	<string name="conectar">Conectar desde</string>
+	<string name="tunel">Tipo de túnel</string>
+	<string name="tunel2">Tipo de túnel seleccionado</string>
+	
+	<string name="custom_payload3">Custom Payload</string>
+	<string name="service_tunnel_starstq">Tunneling service started</string>
+	<string name="service_tunnel_ssstart">Tunneling service started</string>
+	<string name="service_tunnel_stasart">Tunneling service started</string>
+	<string name="gen">Generate</string>
+	<string name="toasty_connected">Conectado</string>
+	<string name="night_mode">Night Mode</string>
+	<string name="copy">Copy</string>
+	<string name="tunnel_type">Tunnel Type</string>
+	<string name="tunnel_type2">Tunnel Type</string>
+	<string name="app_crash">Application Error</string>
+	<string name="pulic_fingerprint">Fingerprint :</string>
+	<string name="box_disable">Disable</string>
+	<string name="box_enable">Enable</string>
+  
+    <string name="service_text" translatable="false"><font color='#FFEDF0F8'>MARCA LA CASILLA PARA COMPARTIR WI-FI</font></string>
+    <string name="proxy_started" translatable="false">Tunnel Wi-Fi Activado</string>
+    
+    <string name="started" translatable="false">Got It</string>
+    <string name="hardware_id" translatable="false">Hardware ID</string>
+    <string name="procurar_ip" translatable="false">Procurar IP</string>
+    <string name="validador_de_host" translatable="false">Validador de Host</string>
+    <string name="compartir_internet" translatable="false">Compartir Wi-fi</string>
+    <string name="activar_wifi_shared" translatable="false">Activar Wifi Shared</string>
+    <string name="recuerde_activar_zona_wifi" translatable="false">Recuerde Activar Zona WiFI</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="zona_wi_fi" translatable="false">Zona Wi-FI</string>
+	<string name="set_dns">Set DNS</string>
+	<string name="ssh_compresion">Compresión de datos</string>
+	<string name="ssh_compresion_info">Comprime y acelera la transferencia de datos para archivos/datos que se pueden comprimir. NO recomendado para dispositivos con poca memoria</string>
+	<string name="msg_empty">Message Empty</string>
+	<string name="preview_msg">Vista previa del mensaje:</string>
+	<string name="title_preview_msg">Vista previa del mensaje</string>
+	<string name="message_note">Mesage/Note</string>
+	<string name="intro_tittle1">PROTECT AND SECURITY</string>
+	<string name="intro_tittle2">ONLINE FREEDOM</string>
+	<string name="intro_tittle3">PRIVACY and SECURITY</string>
+	<string name="intro_des1">You can browse the internet in the most secure possible way. With full data encryption, We let you anonymously browse the internet and protect your private information.</string>
+	<string name="intro_des2">Bypass censorship and get unlimited access to all of your favourite websites and apps without any fear of being monitored by someone.</string>
+	<string name="intro_des3">Using free data and open connections puts your information at risk. Weaposll keep your sensitive information away from hackers and ISPs.</string>
+	
+    
+    
+     <string name="proxy_on"><font color='#00FF00'>You are Sharing Internet !!</font></string>
+  <string name="proxy_off"><font color='#000000'>Tap Switch Below To Start !!</font></string>
+        <string name="turn_on_tethering">Please enable wifi sharing</string>
+    <string name="connect_wifi">or connect to wifi</string>
+    <string name="proxy_is_running">Proxy is running on:</string>
+    <string name="proxy_stopped">Proxy stopped</string>
+    <string name="enter_proxy_port">Enter the proxy port (eg: 8080):</string>
+    <string name="start_server">Start server</string>
+    <string name="stop_server">Stop server</string>
+    <string name="wifi_tethering">Wi-Fi Sharing Settings</string>
+    <string name="enter_the_port">Enter port (eg: 8080)</string>
+    <string name="busy_port">This port is busy</string>
+    <string name="enter_another_port">Please Click Restart</string>
+    <string name="errors">There are a few bugs</string>
+    <string name="restart">Restart</string>
+    <string name="bj">Wifi Tethering</string>
+    
+    <string name="tether_how_to">"1. Turn on Hotspot.
+2. Connect the other device (client) to the hotspot.
+3. On that device, modify the WiFi connection.
+4. Click Advanced Options
+5. Set to manual proxy:
+ Enter Proxy Host
+ Enter Proxy Port
+6. Click Save, and you are done.
+
+You can now enjoy the VPN connection of the host device!
+
+[If you want the device to not sleep while tethering, stay on the app's home screen.]"</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10.0dip"
+        app:cardElevation="16.0dip"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip" />
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout1"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingBottom="10.0dip">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:text="TIEMPO AGREGADO"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18.0dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:text="+2 HORAS DISFRUTELO REY"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="16.0dip"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorLink="#ff00c853"
+                    android:textSize="14.0dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message"
+                    android:layout_marginTop="30.0dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100.0">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/positiveBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="50.0"
+                        android:clickable="true"
+                        android:elevation="5.0dip"
+                        android:gravity="center"
+                        android:innerRadius="0.0dip"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        app:cardBackgroundColor="#ffa420"
+                        app:cardCornerRadius="25.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:id="@+id/positiveTxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Okay"
+                            android:textColor="#ffffff"
+                            android:textSize="15.0dip" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

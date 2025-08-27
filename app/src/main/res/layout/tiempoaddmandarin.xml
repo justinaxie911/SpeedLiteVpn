@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/background_rounded"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/background_rounded"
+            android:paddingBottom="15.0dip" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/relativelayout1"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingBottom="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="120.0dip"
+                    android:layout_height="120.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:src="@drawable/astronauta"
+                    android:adjustViewBounds="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout2"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingBottom="10.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout1">
+
+                <TextView
+                    android:textSize="18.0dip"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:id="@+id/title"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:textSize="14.0dip"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:autoLink="web"
+                    android:id="@+id/mensajeone"
+                    android:paddingLeft="16.0dip"
+                    android:paddingRight="16.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip"
+                android:paddingBottom="10.0dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:layout_below="@+id/relativelayout2"
+                android:layout_centerInParent="true"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/positivBtn"
+                    android:clickable="true"
+                    android:background="@drawable/button_blue"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+
+                    <ImageView
+                        android:layout_width="30.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:src="@drawable/ad" />
+
+                    <TextView
+                        android:textSize="18.0dip"
+                        android:textStyle="bold"
+                        android:textColor="#ffffffff"
+                        android:background="#00000000"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/positivTxt"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:text="Ver Anuncio"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:layout_width="30.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/play" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

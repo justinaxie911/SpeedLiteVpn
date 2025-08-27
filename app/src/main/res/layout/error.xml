@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    app:cardCornerRadius="16dp"
+    android:id="@+id/main_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:background="@drawable/dialog_circle_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/appButton1">
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/center_block">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_height="match_parent"
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                app:lottie_rawRes="@raw/error" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginTop="@dimen/padd_10"
+                android:text="todo correco , ya estas en la ultima actualizacion de los servidores" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

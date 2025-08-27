@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	>
+
+	
+
+		
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:paddingLeft="20.0dip"
+            android:paddingTop="20.0dip"
+            android:paddingRight="20.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/snipro"
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:inputType="text"
+					android:ems="9"
+					android:hint="@string/sni_title"
+					android:singleLine="true"/>
+
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+		
+
+</LinearLayout>
+

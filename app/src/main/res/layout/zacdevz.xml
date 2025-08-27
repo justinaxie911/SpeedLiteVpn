@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="175.0dip"
+		android:layout_marginTop="10.0dip">
+
+		<androidx.cardview.widget.CardView
+			android:gravity="center"
+			android:layout_width="235.0dip"
+			android:layout_height="169.0dip"
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginRight="10.0dip"
+			android:layout_weight="1.0"
+			app:cardBackgroundColor="#008080"
+			app:cardCornerRadius="10.0dip"
+			app:cardElevation="10.0dip">
+
+			<ImageView
+				android:layout_gravity="bottom"
+				android:background="@drawable/button_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="5.0dip"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10.0dip">
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="13.0dip"
+						android:textStyle="bold"
+						android:textColor="#FFFF00"
+						android:gravity="center"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="SpeedLite"/>
+
+				</LinearLayout>
+
+				<ImageView
+					android:gravity="center"
+					android:background="@drawable/linea"
+					android:layout_width="fill_parent"
+					android:layout_height="1.0dip"
+					android:layout_marginTop="6.0dip"
+					android:layout_marginBottom="4.0dip"/>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="0.0dip">
+
+					<TextView
+						android:textSize="11.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Trafico de Datos"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:padding="1.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="0.0dip"
+						android:text="Subida: "/>
+
+					<ImageView
+						android:layout_width="10.0dip"
+						android:layout_height="10.0dip"
+						android:layout_marginLeft="5.0dip"
+						android:src="@drawable/ic_up"
+						android:tint="#ffdc2d28"/>
+
+					<TextView
+						android:textSize="8.0dip"
+						android:textStyle="bold"
+						android:textColor="#00FFFF"
+						android:id="@+id/bytes_out1"
+						android:typeface="serif"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="5.0dip"
+						android:text="0B"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:padding="1.0dip"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="0.0dip"
+						android:text="Bajada: "/>
+
+					<ImageView
+						android:layout_width="10.0dip"
+						android:layout_height="10.0dip"
+						android:layout_marginLeft="5.0dip"
+						android:src="@drawable/ic_down"
+						android:tint="#ffdc2d28"/>
+
+					<TextView
+						android:textSize="8.0dip"
+						android:textStyle="bold"
+						android:typeface="serif"
+						android:textColor="#00FFFF"
+						android:id="@+id/bytes_in1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0B"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="0.0dip"
+						android:text="Version de Config: "/>
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#00FFFF"
+						android:id="@+id/config_version_info1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="0.0dip"
+						android:text="NN"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="0.0dip"
+						android:text="Operador: "/>
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#00FFFF"
+						android:id="@+id/operador1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="0.0dip"
+						android:text=""/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="0.0dip">
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="0.0dip"
+						android:layout_marginBottom="0.0dip"
+						android:text="IP Local: "/>
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#00FFFF"
+						android:id="@+id/xip1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="0.0dip"
+						android:text="00.00.00.00"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Duracion VPN: "
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:textColor="#ffffffff"
+						android:gravity="center"
+						android:textSize="9.0dip"
+                        android:visibility="gone"
+						android:typeface="serif"
+						android:textStyle="bold"/>
+
+					<Chronometer
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:text="00h:00m:00s"
+						android:id="@+id/cmTimer"
+                        android:visibility="gone"
+						android:gravity="center"
+						android:textSize="9.0dip"
+						android:typeface="serif"
+						android:textStyle="bold"
+						android:textColor="#00FFFF"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#ffffffff"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Estado: "/>
+
+					<TextView
+						android:textSize="9.0dip"
+						android:textStyle="bold"
+						android:textColor="#00FFFF"
+						android:id="@+id/monsour_stats1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Desconectado"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</androidx.cardview.widget.CardView>
+
+		<androidx.cardview.widget.CardView
+			android:gravity="center"
+			android:layout_width="235.0dip"
+			android:layout_height="169.0dip"
+			android:layout_marginLeft="10.0dip"
+			android:layout_marginRight="10.0dip"
+			android:layout_weight="1.0"
+			app:cardBackgroundColor="#008080"
+			app:cardCornerRadius="10.0dip"
+			app:cardElevation="10.0dip">
+
+			<ImageView
+				android:layout_gravity="bottom"
+				android:background="@drawable/button_blue"
+				android:layout_width="fill_parent"
+				android:layout_height="5.0dip"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10.0dip">
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:textSize="13.0dip"
+						android:textStyle="bold"
+						android:textColor="#FFFF00"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Tiempo Restante:"/>
+
+				</LinearLayout>
+
+				<ImageView
+					android:gravity="center"
+					android:background="@drawable/linea"
+					android:layout_width="fill_parent"
+					android:layout_height="1.0dip"
+					android:layout_marginTop="6.0dip"
+					android:layout_marginBottom="4.0dip"/>
+
+				<LinearLayout
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="0.0dip">
+
+					<LinearLayout
+						android:gravity="center"
+						android:orientation="horizontal"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content">
+
+						<LinearLayout
+							android:gravity="center"
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content">
+
+							<ImageView
+								android:gravity="center"
+								android:layout_width="40.0dip"
+								android:layout_height="40.0dip"
+								android:src="@drawable/ic_tempo"/>
+
+						</LinearLayout>
+
+						<LinearLayout
+                            android:id="@+id/timerLayout"
+							android:gravity="center"
+							android:orientation="vertical"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content">
+
+							<TextView
+								android:textSize="10.0dip"
+								android:id="@+id/timerTextView"
+								android:layout_width="wrap_content"
+								android:textStyle="bold"
+								android:typeface="serif"
+								android:layout_height="wrap_content"
+								android:textColor="#00FFFF"
+								android:text="00d:00h:00m:00s"/>
+
+							<TextView
+								android:textSize="10.0dip"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textColor="#ffffffff"
+								android:text="Dias:Horas:Min:Seg"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+ <soup.neumorphism.NeumorphCardView
+                android:id="@+id/timershadowgatesccn"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:onClick="menumandarin"
+                app:neumorph_backgroundColor="#049AAE"
+                app:neumorph_shadowColorDark="@color/card_view_bg"
+                app:neumorph_shadowColorLight="@color/card_view_bg"
+                app:neumorph_shadowElevation="6dp"
+                app:neumorph_shapeType="flat">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/stroke"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:text="AGREGAR + TIEMPO"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </soup.neumorphism.NeumorphCardView>
+
+			
+
+			</LinearLayout>
+
+		</androidx.cardview.widget.CardView>
+
+	</LinearLayout>
+
+</LinearLayout>

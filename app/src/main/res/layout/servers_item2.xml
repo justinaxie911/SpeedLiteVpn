@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:id="@+id/serverListLayout">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/itemImage" />
+
+        <ImageView
+            android:id="@+id/imagemainlayout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:textSize="13.0dip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombremainlayout"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/infomainlayout"
+                    android:textColor="#D3D3D3"
+                    android:textSize="9.0dip" />
+
+            </LinearLayout>
+             <ImageView
+                            android:layout_height="22dp"
+                            android:layout_width="22dp"
+                            android:visibility="visible"
+                            android:src="@drawable/cnt"
+                            android:layout_marginRight="11.0dip"
+                            app:tint="@color/white" />
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+                app:tint="#00FF00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Premium "
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:id="@+id/tvInfo"
+                android:gravity="center"
+                android:textColor="#ff152021"
+                 android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

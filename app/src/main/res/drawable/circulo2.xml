@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="20.0"
+            android:useLevel="false">
+            <solid android:color="#FF3B3B3B" />
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="270.0"
+            android:toDegrees="270.0">
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="19.65"
+                android:useLevel="true">
+                <corners android:radius="20dp" />
+                <solid android:color="#FFFFFFFF" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

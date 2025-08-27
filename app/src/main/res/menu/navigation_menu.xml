@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by ZacDevz Official VPN on 27/01/24 22:59
+  ~  Copyright (c) Telegram: @ZacDevzOfficial1 . All rights reserved.
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/grupo1">
+        <item
+            android:id="@+id/configUpdate"
+            android:icon="@drawable/ic_file_download"
+            android:title="Actualizar" />
+
+        
+        <item
+            android:id="@+id/offline"
+            android:icon="@drawable/ofline"
+            android:title="Importar Config" />
+
+        <item
+            android:id="@+id/miPhoneConfg"
+            android:icon="@drawable/ic_radio_tower"
+            android:title="@string/network_mobile" />
+
+
+    </group>
+
+
+    <group android:id="@+id/grupo14">
+
+        <item
+            android:id="@+id/miSettings"
+            android:icon="@drawable/ic_settings"
+            android:title="Configuraciones" />
+
+
+        <item
+            android:icon="@drawable/ic_speed"
+            android:id="@+id/vz"
+            android:title="Velocidad de Internet" />
+
+    </group>
+
+    <group android:id="@+id/grupo2">
+        <item
+            android:id="@+id/miSettingsSSH"
+            android:icon="@drawable/ic_cloud_line"
+            android:title="@string/settings_ssh" />
+
+    </group>
+
+
+    <group android:id="@+id/grupo215">
+
+
+       
+
+
+    </group>
+
+    
+    <item
+            android:id="@+id/hostshare"
+            android:visible="false"
+            android:icon="@drawable/ic_wifi_tethering_black_24dp"
+            android:title="Hotspot Tether"/>
+    
+
+    <item
+        android:icon="@drawable/battery_profile"
+        android:id="@+id/BATTERY_OPTIMIZATION"
+        android:title="Optimizacion" />
+
+
+    <item
+        android:id="@+id/copiartokenlatamsrc"
+        android:visible="true"
+        android:icon="@drawable/ic_fingerprint"
+        android:title="Token ID" />
+
+    <item android:id="@+id/expiracion"
+        android:icon="@drawable/calendario"
+        android:visible="false"
+        android:title="Fecha de expiracion"/>
+
+
+
+    <item
+        android:id="@+id/miExit"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/exit" />
+
+
+</menu>
